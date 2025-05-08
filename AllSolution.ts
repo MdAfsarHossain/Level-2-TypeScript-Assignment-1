@@ -1,9 +1,9 @@
 {
   function formatString(input: string, toUpper?: boolean): string {
-    if (toUpper || toUpper === undefined) {
-      return input.toLocaleUpperCase();
+    if (toUpper === false) {
+      return input.toLowerCase();
     } else {
-      return input.toLocaleLowerCase();
+      return input.toUpperCase();
     }
   }
 
